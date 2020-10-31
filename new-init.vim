@@ -76,6 +76,9 @@ let g:split_term_resize_cmd = 'resize 6'
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 
+let using_neovim = has('nvim')
+let using_vim = !using_neovim
+
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-commentary'
