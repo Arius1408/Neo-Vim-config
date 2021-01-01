@@ -1,10 +1,3 @@
-" To use fancy symbols wherever possible, change this setting from 0 to 1
-" and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal 
-" (if you aren't using one of those fonts, you will see funny characters here. 
-" Turst me, they look nice when using one of those fonts).
-"
-"
-" for detecting OS
 if !exists("g:os")
     if has("win64") || has("win32") || has("win16")
         let g:os = "Windows"
@@ -291,9 +284,7 @@ if has('gui_running') || using_neovim || (&term =~? 'mlterm\|xterm\|xterm-256\|s
     if !has('gui_running')
         let &t_Co = 256
     endif
-    colorscheme vim-monokai-tasty
 else
-    colorscheme delek
 endif
 
 " needed so deoplete can auto select the first suggestion
@@ -328,7 +319,7 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 
 " fix problems with uncommon shells (fish, xonsh) and plugins running commands
 " (neomake, ...)
-set shell=/bin/bash 
+set shell=/bin/zsh 
 
 " Ability to add python breakpoints
 " (I use ipdb, but you can change it to whatever tool you use for debugging)
