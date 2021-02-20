@@ -137,7 +137,6 @@ Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/IndexedSearch'
 " A couple of nice colorschemes
 " Plug 'fisadev/fisa-vim-colorscheme'
-Plug 'patstockwell/vim-monokai-tasty'
 " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -180,7 +179,6 @@ Plug 'lilydjwg/colorizer'
 " Window chooser
 Plug 't9md/vim-choosewin'
 " Automatically sort python imports
-Plug 'fisadev/vim-isort'
 " Highlight matching html tags
 Plug 'valloric/MatchTagAlways'
 " Generate html in a simple way
@@ -449,7 +447,7 @@ let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 " Yankring -------------------------------
 
 if using_neovim
-    let g:yankring_history_dir = '~/.config/nvim/'
+   let g:yankring_history_dir = '~/.config/nvim/'
     " Fix for yankring and neovim problem when system has non-text things
     " copied in clipboard
     let g:yankring_clipboard_monitor = 0
@@ -471,13 +469,13 @@ if fancy_symbols_enabled
     if !exists('g:airline_symbols')
        let g:airline_symbols = {}
     endif
-    let g:airline_left_sep = ''
-    let g:airline_left_alt_sep = ''
-    let g:airline_right_sep = ''
-    let g:airline_right_alt_sep = ''
-    let g:airline_symbols.branch = '⭠'
-    let g:airline_symbols.readonly = '⭤'
-    let g:airline_symbols.linenr = '⭡'
+    let g:airline_left_sep = '?'
+    let g:airline_left_alt_sep = '?'
+    let g:airline_right_sep = '?'
+    let g:airline_right_alt_sep = '?'
+    let g:airline_symbols.branch = '?'
+    let g:airline_symbols.readonly = '?'
+    let g:airline_symbols.linenr = '?'
 else
     let g:webdevicons_enable = 0
 endif
